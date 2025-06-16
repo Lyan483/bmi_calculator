@@ -87,8 +87,8 @@ if st.button("Check My BMI"):
 #         st.warning("We don't have any datat about you!")
 
 #BMI category table
-catgeory = [['>18.5', 'underweight'], ['18.5 - 24.9', 'Normal Weight'],
-            ['25.0 - 29.9', 'Overweight'], ['30.0 - 34.9', 'Bbesity Class I'],
+catgeory = [['>18.5', 'Underweight'], ['18.5 - 24.9', 'Normal Weight'],
+            ['25.0 - 29.9', 'Overweight'], ['30.0 - 34.9', 'Obesity Class I'],
             ['35.0 - 39.9', 'Obesity Class II'], ['>40', 'Obesity Class III']]
 bmi_cat = pd.DataFrame(catgeory, columns = ['BMI', 'Category'])
 bmi_cat.index = range(1, len(bmi_cat) + 1)
