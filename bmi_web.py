@@ -54,7 +54,7 @@ if st.button("Check My BMI"):
         if height <= 0 or weight <= 0 :
             raise ValueError
         bmi, status = bmi_cal(height,weight)
-        st.write(f" Your BMI is **{bmi}**, it's  means  your are **{status}**. ")
+        st.write(f"{user_name}, your BMI is **{bmi}**, it's  means  your are **{status}**. ")
 
         #record saving  
         # user_bmi_record.append({'Name': user_name.title(), 'Age' : user_age ,'BMI' : bmi , 'Status': status})
